@@ -1,22 +1,24 @@
 # tests/test_validator.py
-from validator import validate_email, validate_phone, validate_snils
+from validator import validate_email, validate_phone
 
 
 def test_validate_email():
     assert validate_email("test@example.com") == True
     assert validate_email("invalid") == False
+<<<<<<< HEAD
 
 
 def test_validate_phone():
     assert validate_phone("+79991234567") == True
     assert validate_phone("89991234567") == False
     assert validate_phone("+7999123") == False
-
+=======
+    
 
 def test_validate_snils():
     # Валидные СНИЛС (рассчитаны по алгоритму)
     assert validate_snils("11223344595") == True
-    assert validate_snils("001-001-999 65") == True  # с форматированием
+    assert validate_snils("001-001-999 32") == True  # с форматированием
     
     # Невалидные: неверный формат
     assert validate_snils("123") == False              # слишком короткий
@@ -25,3 +27,4 @@ def test_validate_snils():
     
     # Невалидные: неверная контрольная сумма
     assert validate_snils("11223344500") == False
+>>>>>>> upstream/feature/instructor-change

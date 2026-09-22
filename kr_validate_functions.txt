@@ -1,0 +1,3 @@
+def validate_phone(phone: str) -> bool:
+def validate_email(email: str) -> bool:
+def validate_snils(snils: str) -> bool:

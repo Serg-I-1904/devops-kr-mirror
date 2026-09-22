@@ -1,0 +1,3 @@
+11604eb feat: add phone validation function
+1341ed3 fix: fix validator
+5ed82d1 test: add tests
